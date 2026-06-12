@@ -249,7 +249,7 @@ These SQL scripts complement the Python-based analytics workflow.
 **Sai Srihari**
 
 - GitHub: https://github.com/saisriharida
-- LinkedIn: *(Add your LinkedIn profile URL here)*
+- LinkedIn: https://www.linkedin.com/in/saisrihari-da
 
 ---
 
