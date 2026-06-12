@@ -1,29 +1,56 @@
  🏦 Banking Analytics Project
 
- 📌 Overview
-This project demonstrates an end-to-end Banking Analytics workflow using Python. It combines customer, card, and transaction datasets to uncover spending patterns, card usage behavior, and customer insights through data analysis and visualization.
+ 📌 Project Overview
 
-The project was developed as part of my Data Analytics portfolio to showcase practical skills in Python, data manipulation, exploratory data analysis (EDA), and data visualization.
+This project is an end-to-end Banking Analytics solution developed using **Python** and popular data analysis libraries. It integrates customer, card, and transaction datasets to uncover valuable insights into customer spending behavior, card usage patterns, and transaction trends.
 
----
-
- 🎯 Project Objectives
-- Merge and transform multiple banking datasets.
-- Analyze customer spending behavior.
-- Study card brand and card type distributions.
-- Identify high-value customers based on transaction volume.
-- Compare average transaction amounts across different card brands.
-- Generate business insights using data visualization.
+The objective of this project is to demonstrate practical skills in **data cleaning, data transformation, exploratory data analysis (EDA), data visualization, and business insight generation** using real-world style banking data.
 
 ---
 
- 📂 Dataset
-The project uses three related datasets:
-1. **Users Dataset** – Customer demographic and financial information.
-2. **Cards Dataset** – Credit/debit card details associated with customers.
-3. **Transactions Dataset** – Individual transaction records including amount, merchant details, and location.
+ 🎯 Business Objectives
 
-These datasets were merged using common keys to create a unified analytics dataset.
+- Integrate multiple banking datasets into a unified analytical model.
+- Analyze customer demographics and card usage behavior.
+- Identify the distribution of different card brands and card types.
+- Explore transaction patterns and spending behavior.
+- Discover high-value customers based on transaction volume.
+- Generate business insights using data visualization techniques.
+
+---
+
+ 📂 Dataset Description
+
+The project uses three interconnected datasets:
+
+ 1. Users Dataset
+Contains customer demographic and financial information, including:
+- Customer ID
+- Age
+- Gender
+- Income
+- Credit Score
+- Number of Credit Cards
+- Debt Information
+
+ 2. Cards Dataset
+Contains card-related details associated with customers:
+- Card Brand (Visa, Mastercard, Amex, Discover)
+- Card Type (Debit, Credit, Prepaid)
+- Credit Limit
+- Card Expiry
+- Chip Availability
+
+ 3. Transactions Dataset
+Contains customer transaction records:
+- Transaction Amount
+- Merchant Name
+- Merchant City
+- Transaction Date
+- Card ID
+- Customer ID
+
+The datasets are merged using common identifiers to create a comprehensive banking analytics dataset.
 
 ---
 
@@ -31,7 +58,7 @@ These datasets were merged using common keys to create a unified analytics datas
 
 | Technology | Purpose |
 |------------|----------|
-| Python | Data Analysis |
+| Python | Programming Language |
 | Pandas | Data Cleaning & Data Manipulation |
 | NumPy | Numerical Operations |
 | Matplotlib | Data Visualization |
@@ -42,67 +69,84 @@ These datasets were merged using common keys to create a unified analytics datas
 
  🔄 Project Workflow
 
-1. Import required Python libraries.
-2. Load user, card, and transaction datasets.
-3. Merge datasets using common identifiers.
-4. Perform data validation and preprocessing.
-5. Conduct Exploratory Data Analysis (EDA).
-6. Create visualizations and derive business insights.
-7. Document and publish the project on GitHub.
+1. Imported required Python libraries.
+2. Loaded Users, Cards, and Transactions datasets.
+3. Merged Users and Cards datasets.
+4. Merged the combined dataset with Transactions data.
+5. Performed data validation and preprocessing.
+6. Conducted Exploratory Data Analysis (EDA).
+7. Created visualizations to understand customer and transaction behavior.
+8. Generated business insights from the analysis.
+9. Published the complete project on GitHub.
 
 ---
 
- 📊 Key Analysis Performed
+ 📊 Exploratory Data Analysis (EDA)
 
  Customer & Card Analysis
 - Merged customer and card datasets.
-- Card Brand Distribution.
-- Card Type Distribution.
+- Card Brand Distribution Analysis.
+- Card Type Distribution Analysis.
 
  Transaction Analysis
-- Transaction amount statistics.
-- Top 10 customers by total transaction amount.
-- Average transaction amount by card brand.
-- Customer spending pattern analysis.
+- Transaction Amount Statistics.
+- Top 10 Customers by Total Transaction Value.
+- Average Transaction Amount by Card Brand.
+- Customer Spending Pattern Analysis.
 
 ---
 
- 📈 Sample Insights
+ 📈 Key Insights
 
-- Mastercard is the most commonly used card brand in the dataset.
-- Debit cards are more prevalent than credit cards.
-- A small number of customers contribute significantly to the total transaction value.
-- Mastercard and Visa users show higher average transaction amounts compared to other card brands.
+- **Mastercard** is the most widely used card brand in the dataset.
+- **Debit Cards** are issued more frequently than Credit Cards.
+- A relatively small group of customers contributes a significant portion of the total transaction value.
+- **Visa** and **Mastercard** users have higher average transaction amounts compared to other card brands.
+- Customer spending patterns reveal opportunities for targeted banking products and personalized offers.
 
 ---
 
- 📸 Project Screenshots
-
-(Add your chart screenshots here after uploading them to the repository.)
+ 📸 Project Visualizations
 
  Card Brand Distribution
 ![Card Brand Distribution](screenshots/card_brand_distribution.png)
 
+ Card Type Distribution
+![Card Type Distribution](screenshots/card_type_distribution.png)
+
  Average Transaction Amount by Card Brand
 ![Average Transaction Amount](screenshots/avg_transaction_by_brand.png)
+
+ Top 10 Customers by Transaction Value
+![Top Customers](screenshots/top_customers.png)
 
 ---
 
  🚀 How to Run the Project
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/saisriharida/Banking-Analytics-Project.git
-   ```
+ 1. Clone the Repository
 
-2. Open the Jupyter Notebook or Google Colab notebook.
+```bash
+git clone https://github.com/saisriharida/Banking-Analytics-Project.git
+```
 
-3. Install the required libraries:
-   ```bash
-   pip install pandas numpy matplotlib
-   ```
+ 2. Open the Project
 
-4. Run the notebook cells sequentially.
+Open the notebook file:
+```
+Banking_Analytics_Project.ipynb
+```
+using Jupyter Notebook or Google Colab.
+
+ 3. Install Required Libraries
+
+```bash
+pip install pandas numpy matplotlib
+```
+
+ 4. Run the Notebook
+
+Execute all notebook cells sequentially to reproduce the analysis and visualizations.
 
 ---
 
@@ -111,14 +155,31 @@ These datasets were merged using common keys to create a unified analytics datas
 ```
 Banking-Analytics-Project/
 │
-├── Banking_Analytics_Project_Python.ipynb
+├── Banking_Analytics_Project.ipynb
 ├── README.md
 ├── LICENSE
 ├── screenshots/
 │   ├── card_brand_distribution.png
-│   └── avg_transaction_by_brand.png
-└── datasets/ (optional)
+│   ├── card_type_distribution.png
+│   ├── avg_transaction_by_brand.png
+│   └── top_customers.png
+└── .gitignore
 ```
+
+---
+
+ 💡 Skills Demonstrated
+
+- Data Cleaning
+- Data Transformation
+- Data Integration
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Business Insight Generation
+- Python Programming
+- Pandas & NumPy
+- Matplotlib
+- Git & GitHub
 
 ---
 
@@ -126,15 +187,17 @@ Banking-Analytics-Project/
 
 **Sai Srihari**
 
-- GitHub: https://github.com/saisriharida
-- LinkedIn: https://www.linkedin.com/in/saisrihari-da
+- **GitHub:** https://github.com/saisriharida
+- **Project Repository:** https://github.com/saisriharida/Banking-Analytics-Project
 
-
+---
 
  ⭐ Project Highlights
-- End-to-end analytics workflow.
-- Real-world banking domain dataset.
-- Data merging and transformation using Pandas.
-- Exploratory Data Analysis (EDA).
-- Business insights supported by visualizations.
-- Version controlled and documented using GitHub.
+
+✔️ End-to-End Banking Analytics Project  
+✔️ Real-world Data Analysis Workflow  
+✔️ Multiple Dataset Integration using Pandas  
+✔️ Exploratory Data Analysis (EDA)  
+✔️ Business Insights through Visualizations  
+✔️ Version Controlled with Git & GitHub  
+✔️ Portfolio Project for Data Analyst / Data Engineer Roles
